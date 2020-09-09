@@ -8,7 +8,7 @@ client.canvas = new Canvacord();
 client.commands = new Discord.Collection();
 client.cooldown = new Discord.Collection();
 client.config = {
-    TOKEN: "NzUzMzQ3MzgxMTU5OTE5NjU2.X1k3bA.08X0E8NS9O5AEQKAC2mVEDB9sOw",
+    
     prefix: "!",
     cooldown: 15000
 };
@@ -45,4 +45,4 @@ function xp(message) {
     }
 }
 
-client.login(client.config.TOKEN);
+client.login(process.env.BOT_TOKEN);
