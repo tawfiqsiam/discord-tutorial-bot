@@ -8,24 +8,11 @@ client.canvas = new Canvacord();
 client.commands = new Discord.Collection();
 client.cooldown = new Discord.Collection();
 client.config = {
-    TOKEN: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    TOKEN: "NzUzMzQ3MzgxMTU5OTE5NjU2.X1k3bA.DsE49ywYdmReaQ67J53gpZ3x6vU",
     prefix: "!",
     cooldown: 15000
 };
-
-// Load Commands
-fs.readdir("./commands/", (err, files) => {
-    if (err) return console.error(err);
-    files.forEach(f => {
-        if (!f.endsWith(".js")) return;
-        let command = require(`./commands/${f}`);
-        client.commands.set(command.help.name, command);
-    });
-});
-
-// Events
-client.once("ready", () => {
-    console.log("Ready!");
+e
 });
 
 client.on("error", console.error);
