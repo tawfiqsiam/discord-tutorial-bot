@@ -13,7 +13,7 @@ client.config = {
     cooldown: 15000
 };
 
-});
+
 
 client.on("error", console.error);
 
