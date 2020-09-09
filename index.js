@@ -12,7 +12,7 @@ client.config = {
     prefix: "!",
     cooldown: 15000
 };
-e
+
 });
 
 client.on("error", console.error);
